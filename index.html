@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  
+    <div class="container">
+        <aside class="summary-panel">
+            <h2>Resumen</h2>
+            <div class="summary-item total">
+                <p>Total de tareas: <span id="total-tasks">0</span></p>
+            </div>
+            <div class="summary-item completed">
+                <p>Tareas realizadas: <span id="completed-tasks">0</span></p>
+            </div>
+            <div class="summary-item pending">
+                <p>Tareas pendientes: <span id="pending-tasks">0</span></p>
+            </div>
+        </aside>
+        
+        <main id="task-panel">
+            <h1>Lista de Tareas</h1>
+
+            <div class="add-task-form">
+                <input type="text" id="new-task" placeholder="Agregar una nueva tarea">
+                <button type="button" id="add-task-btn">Agregar tarea</button>
+            </div>
+            
+            <div class="tasks-container">
+                <ul id="task-list"></ul>
+            </div>
+        </main>
+    </div>
+
+
+    <footer class="footer">
+        <p>Todos los derechos reservados &copy; 2025</p>
+    </footer>
+
+    <script src="./assets/js/function.js"></script>
+</body>
+</html>
